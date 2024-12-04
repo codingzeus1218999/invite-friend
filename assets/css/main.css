@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply font-lato;
+  }
+  @font-face {
+    font-family: "Movavi Grotesque";
+    src: url("../fonts/Movavi Grotesque Black.ttf") format("truetype");
+    font-weight: 900;
+  }
+  @font-face {
+    font-family: "Movavi Grotesque";
+    src: url("../fonts/Movavi Grotesque Black Italic.ttf") format("truetype");
+    font-weight: 900;
+    font-style: italic;
+  }
+}
+
+@layer components {
+  .stroked-text-1 {
+    -webkit-text-stroke: 0.5px #000000;
+    -webkit-text-fill-color: #ffffff;
+    text-shadow: 0px 0.5px 0px rgba(0, 0, 0, 0.5);
+  }
+  .stroked-text-2 {
+    -webkit-text-stroke: 0.5px #000000;
+    -webkit-text-fill-color: #facb46;
+    text-shadow: 0px 2px 0px rgba(0, 0, 0, 1);
+  }
+  .stroked-text-3 {
+    -webkit-text-fill-color: #ffffff;
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 1);
+  }
+  .stroked-text-4 {
+    -webkit-text-stroke: 0.3px #1f1f1f;
+    -webkit-text-fill-color: #ffffff;
+    text-shadow: 0px 0.5px 0px rgba(31, 31, 31, 1);
+  }
+  .image-box {
+    @apply h-115px p-2.5 rounded-xl bg-center bg-no-repeat bg-cover flex items-end;
+    border: 2px solid #7dd0ff;
+    box-shadow: 0px 1px 10px rgba(125, 208, 255, 0.5);
+  }
+}
